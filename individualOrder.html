@@ -259,7 +259,7 @@
     'use strict'
 
    
-    emailjs.init({ publicKey: "ТВОЙ_PUBLIC_KEY" });
+    emailjs.init({ publicKey: "L9TuoNwaCDvrfirk_" });
 
     const form = document.getElementById('orderForm');
 
@@ -276,7 +276,7 @@
         btn.disabled = true;
         btn.textContent = 'Отправка...';
 
-        emailjs.sendForm('ТВОЙ_SERVICE_ID', 'ТВОЙ_TEMPLATE_ID', form)
+        emailjs.sendForm('service_2ztf8st', 'template_1ta7hrl', form)
             .then(() => {
          
                 const successModal = new bootstrap.Modal(document.getElementById('successModal'));
